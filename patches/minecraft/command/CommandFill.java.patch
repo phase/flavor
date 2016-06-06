@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/command/CommandFill.java	2016-06-05 00:35:29.265188130 -0700
++++ src/main/java/net/minecraft/command/CommandFill.java	2016-06-05 12:22:07.146936847 -0700
+@@ -80,7 +80,7 @@
+                }
+             }
+ 
+-            ArrayList var26 = Lists.newArrayList();
++            ArrayList<BlockPos> var26 = Lists.newArrayList();
+             var10 = 0;
+ 
+             for(int var15 = var8.getZ(); var15 <= var9.getZ(); ++var15) {

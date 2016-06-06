@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/block/state/pattern/BlockStateMatcher.java	2016-06-05 00:35:30.161189850 -0700
++++ src/main/java/net/minecraft/block/state/pattern/BlockStateMatcher.java	2016-06-05 11:47:29.680004796 -0700
+@@ -41,7 +41,7 @@
+       }
+    }
+ 
+-   protected <T extends Comparable<T>> boolean matches(IBlockState var1, IProperty<T> var2, Predicate<?> var3) {
++   protected <T extends Comparable<T>> boolean matches(IBlockState var1, IProperty<T> var2, Predicate<T> var3) {
+       return var3.apply(var1.getValue(var2));
+    }
+ 

@@ -1,0 +1,6 @@
+minecraft/
+src/main/java/net/minecraft/
+src/res/
+target/
+.classpath
+.project

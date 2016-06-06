@@ -1,0 +1,11 @@
+--- minecraft/src/net/minecraft/crash/CrashReport.java	2016-06-05 00:35:18.021166804 -0700
++++ src/main/java/net/minecraft/crash/CrashReport.java	2016-06-05 12:24:15.583467529 -0700
+@@ -71,7 +71,7 @@
+       this.theReportCategory.setDetail("JVM Flags", new ICrashReportDetail<String>() {
+          public String call() {
+             RuntimeMXBean var1 = ManagementFactory.getRuntimeMXBean();
+-            List var2 = var1.getInputArguments();
++            List<String> var2 = var1.getInputArguments();
+             int var3 = 0;
+             StringBuilder var4 = new StringBuilder();
+ 
